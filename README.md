@@ -1,38 +1,4 @@
 Description
                     
                     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Animal Shelter is examining adoption records for animals that stayed in the shelter for a longer duration before being adopted. By focusing on animals that arrived before a specific past date, the team hopes to assess how long-term shelter residents are being adopted and by whom.
-To support this, a query is used to retrieve the Adopter's Full Name, Animal Name, Date of Arrival at the Shelter, and Adoption Date for animals that arrived at the shelter before October 20, 2023.
-This helps the shelter evaluate which adopters are more likely to adopt long-staying animals and plan outreach programs accordingly.The result should have the following columns: full_name animal_name shelter_arrival  adoption_date full_name - full name of the adopteranimal_name - name of the adopted animalshelter_arrival - the date the animal was brought into the shelteradoption_date - the date when the animal was adoptedSort the results by adopter's full name in ascending order and animal name in descending order.Rules: Include only animals that arrived at the shelter before October 20, 2023.Schema:they are four table which is linked with others 1.animal table which has primary key animal_id Int, and other data 2.adoptions table which has primary key adoption_id INT,foriegn key animal_id int,foriegn key animal_id int,foreign key adopter_id int, and other data, 3.adopters table which has primary key adopter_id int and other data 4.vaccinations table which has primary key vaccine_id and foreign key animal_id int and other data
+Once, a language model named Word Wand was tasked with manipulating sentences by a curious user. Word Wand was up for the challenge, altering the sentences based on their word count, reversing each word for odd word counts and reversing the entire sentence's word positions, resulting in a completely flipped sequence for even counts.  Create a software program to automate this manipulation task.Constraints: The sentence should contain only alphabets and spaces; otherwise, print "Invalid Sentence".Note:Do not edit the existing code template.In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user, and the rest of the text represents the output.Implement the business requirements within the main method. Please do not change the class name.Please do not use System.exit(0); to terminate the program.Sample Input / Output 1:Enter the sentenceThe Sun ShineWord Count: 3ehT nuS enihSSample Input / Output 2:Enter the sentenceBold ActionWord Count: 2Action BoldSample Input / Output 3:Enter the sentenceThe number 42 is often referred to as the answer to life, the universe, and everythingInvalid Sentence so it has java :UserInterface.java
