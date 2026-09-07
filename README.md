@@ -2,116 +2,122 @@ Description
                     
                     
 
+In a vehicle management system, every vehicle must be validated before it is added to the registry. The application will validate vehicle details based on predefined criteria. Develop a program to validate and register vehicles based on their details.
 
-RSVP, short for "Répondez S'il Vous Plaît" (French for "Please Respond"), is a request for invitees to confirm their attendance, helping with event preparation. An event planner can use the system to manage RSVPs by inputting a guest list, tracking their attendance statuses, and viewing a filtered list of confirmed guests for efficient planning.
-Functional Requirement:
-
-    
-        
-            
-                Req. #
-            
-             Type (Class)
-            
-                Requirement Description  
-            
-            
-                Method Name
-            
-            
-                Parameters
-            
-            
-                Responsibilities
-            
-        
-        
-            
-                1
-            
-            RSVPHandler
-            
-                Add a guest records to the rsvpList
-            
-            
-                addGuestRSVP
-            
-            
-                String rsvp
-            
-            
-                
-                This method should add the guest's details to the RSVP list, which is implemented as an ArrayList.
-                Constraints:
-                
-                
-                     rsvp contains guestName and status separated by colon ( : ).
-                
-                
-            
-        
-        
-            
-                2
-            
-            RSVPHandler
-            
-                Filter the confirmed guests from the rsvpList
-            
-            
-                getConfirmedGuests 
-            
-            
-                
-            
-            
-                This method should iterate over the rsvpList, check for guests with "confirmed" status, and return the names of confirmed guests in a new List.
-                 Constraints: 
-                
-                
-                    status is case-insensitive.
-                    The method should return a List of Strings.
-                
-                
-            
-        
-    
-
-You are provided with the main method in the UserInterface class as code template, and it is excluded from evaluation.
-Note:
-
-    Edit only the  RSVPHandler class to implement the business requirements.
-    The methods should be public, and the attributes of the class should be private. 
-    In the Sample Input/Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
-    Ensure that the names for classes, attributes, and methods are provided as specified in the question description.
-    Please do not use System.exit(0); to terminate the program.
-
+Functional Requirements:
  
-Sample Input/Output 1:
-
     
         
+            
+                
+                    Req.#
+                
+                  Requirements Description  
+                
+                 Type (Class)
+                
+                    Method Name
+                
+                
+                    Parameters
+                
+                
+                    Description
+                
+            
+            
+                
+                    1
+                
+                  Include a four-argument constructor in Vehicle class.
+                
+                 Vehicle
+                 The getter-setter methods for all the attributes and no-argument constructor are provided as part of code skeleton
+                
+                 String vehicleId, String vehicleType, String fuelType, int engineCapacity
+                
+                 Include a public four-argument constructor in Vehicle class by following the order mentioned : vehicleId, vehicleType, fuelType, and engineCapacity
+                
+            
+            
+                 2
+                 Include a one-argument constructor in InvalidVehicleException class
+                 InvalidVehicleException
+                 -
+                String message
+                Include a public one argument constructor to set the message string to the super class.
+            
+            
+                
+                    3
+                
+                
+                    Extract the details of the Vehicle, verify the details, and create an object for the Vehicle class.
+                
+                 Vehicle
+                
+                    validateVehicleDetails
+                
+                
+                     String vehicleDetails
+                
+                 This method is tasked with validating and parsing a string representing vehicle details. It takes in the string details, splits this string into an array of strings using the colon ( : ) as a delimiter.
+                    It proceeds to check whether each part of the vehicle details conforms to certain patterns:
+                    
+                    
+                        
+                            The vehicleId must match the pattern "VH/" followed by exactly 4 digits.
+                            The vehicleType must match one of the predefined categories: "Car", "Bike", or "Bus".
+                            The fuelType must match either "Petrol", "Diesel", or "Electric".
+                            The engineCapacity must be greater than 50 and less than or equal to 5000.
+                        
+                    
+                    If all parts of the details pass the validation, it constructs a Vehicle object using the parsed details and returns it. However, if any part of the details fails the validation, it throws an InvalidVehicleException with an error message "Invalid vehicle details"
+                        indicating that the vehicle details are invalid.
+                    
+                    Constraints
+                    
+                    
+                        The method should return the Object of type Vehicle.
+                        vehicleType and fuelType is case-sensitive.
+                    
+                    
+                    
+                
+            
         
-        Enter the number of guests to add
-        3
-        Enter the guests details (name:status)
-        John Doe:confirmed
-        Jane Smith:pending
-        Alice Brown:confirmed
-        Confirmed Guests
-        John Doe
-        
-        Alice Brown they are two java 1.UserInterface.java and 2.RSVPHandler.java where in that 
-import java.util.ArrayList;
-import java.util.List;
+    
 
-public class RSVPHandler {
-public List<String> rsvpList = new ArrayList<>();
-public List<String> getRSVPList(){
-return rsvpList;
-}
-public void setRSVPList(List<String> rsvpList){
-this.rsvpList = rsvpList;
-}
- "write the implement the business requirements"
- }
+    You are provided with the main method in the UserInterface class as a code template, and it is excluded from evaluation.
+
+
+
+    Note:
+    
+        Edit only the Vehicle and InvalidVehicleException classes to implement the business requirements.
+        The methods and the constructor should be public, and the attributes of the class should be private.
+        In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+        Ensure that the names for classes, attributes, and methods are provided as specified in the question description.
+        Please do not use System.exit(0); to terminate the program.
+    
+
+
+Input Format:  <vehicleId>: <vehicleType>: <fuelType>: <engineCapacity>
+
+Sample Input / Output 1
+
+    
+    
+        
+            Enter the Vehicle DetailsVH/1234:Car:Petrol:1600Vehicle DetailsVehicle ID: VH/1234Vehicle Type: CarFuel Type: PetrolEngine Capacity: 1600 cc
+        
+    
+    
+      
+    Sample Input / Output 2 
+    
+    
+        
+            Enter the Vehicle DetailsVH/12:Truck:CNG:50Invalid vehicle details it has 3 java 1.InvalidVehicleException.java where it has public class InvalidVehicleException extends exception {
+            //include one argument constructor with string message and set this message to super class constructor
+            } 2.UserInterface.java and 3.Vehicle.java where //include four argument Constructor and //write and implement the business requirements
