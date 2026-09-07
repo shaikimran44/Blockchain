@@ -126,4 +126,4 @@ The result should have the following columns:  
         
     
 
-Rules: Include only records where the capacity is greater than 3000.Schema:
+Rules: Include only records where the capacity is greater than 3000.Schema:the table contains primary key warehouse_id INT, warehouse_name varchar(50),location varchar(50) ,capacity INT
