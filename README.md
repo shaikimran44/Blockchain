@@ -101,4 +101,17 @@ Sample Input/Output 1:
         Confirmed Guests
         John Doe
         
-        Alice Brown they are two java 1.UserInterface.java and 2.RSVPHandler.java where in that "write the implement the business requirements"
+        Alice Brown they are two java 1.UserInterface.java and 2.RSVPHandler.java where in that 
+import java.util.ArrayList;
+import java.util.List;
+
+public class RSVPHandler {
+public List<String> rsvpList = new ArrayList<>();
+public List<String> getRSVPList(){
+return rsvpList;
+}
+public void setRSVPList(List<String> rsvpList){
+this.rsvpList = rsvpList;
+}
+ "write the implement the business requirements"
+ }
