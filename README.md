@@ -1,10 +1,104 @@
 Description
                     
                     
-Once, a language model named Word Wand was tasked with manipulating sentences by a curious user. Word Wand was up for the challenge, altering the sentences based on their word count, reversing each word for odd word counts and reversing the entire sentence's word positions, resulting in a completely flipped sequence for even counts.  Create a software program to automate this manipulation task.Constraints: The sentence should contain only alphabets and spaces; otherwise, print "Invalid Sentence".Note:Do not edit the existing code template.In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user, and the rest of the text represents the output.Implement the business requirements within the main method. Please do not change the class name.Please do not use System.exit(0); to terminate the program.Sample Input / Output 1:Enter the sentenceThe Sun ShineWord Count: 3ehT nuS enihSSample Input / Output 2:Enter the sentenceBold ActionWord Count: 2Action BoldSample Input / Output 3:Enter the sentenceThe number 42 is often referred to as the answer to life, the universe, and everythingInvalid Sentence so it has java :UserInterface.java which has import java.util.Scanner;
-public class UserInterface {
-public static void main(String[] args){
-Scanner sc = new Scanner(System.in);
-//Fill Code here
-}
-}
+
+
+RSVP, short for "Répondez S'il Vous Plaît" (French for "Please Respond"), is a request for invitees to confirm their attendance, helping with event preparation. An event planner can use the system to manage RSVPs by inputting a guest list, tracking their attendance statuses, and viewing a filtered list of confirmed guests for efficient planning.
+Functional Requirement:
+
+    
+        
+            
+                Req. #
+            
+             Type (Class)
+            
+                Requirement Description  
+            
+            
+                Method Name
+            
+            
+                Parameters
+            
+            
+                Responsibilities
+            
+        
+        
+            
+                1
+            
+            RSVPHandler
+            
+                Add a guest records to the rsvpList
+            
+            
+                addGuestRSVP
+            
+            
+                String rsvp
+            
+            
+                
+                This method should add the guest's details to the RSVP list, which is implemented as an ArrayList.
+                Constraints:
+                
+                
+                     rsvp contains guestName and status separated by colon ( : ).
+                
+                
+            
+        
+        
+            
+                2
+            
+            RSVPHandler
+            
+                Filter the confirmed guests from the rsvpList
+            
+            
+                getConfirmedGuests 
+            
+            
+                
+            
+            
+                This method should iterate over the rsvpList, check for guests with "confirmed" status, and return the names of confirmed guests in a new List.
+                 Constraints: 
+                
+                
+                    status is case-insensitive.
+                    The method should return a List of Strings.
+                
+                
+            
+        
+    
+
+You are provided with the main method in the UserInterface class as code template, and it is excluded from evaluation.
+Note:
+
+    Edit only the  RSVPHandler class to implement the business requirements.
+    The methods should be public, and the attributes of the class should be private. 
+    In the Sample Input/Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output.
+    Ensure that the names for classes, attributes, and methods are provided as specified in the question description.
+    Please do not use System.exit(0); to terminate the program.
+
+ 
+Sample Input/Output 1:
+
+    
+        
+        
+        Enter the number of guests to add
+        3
+        Enter the guests details (name:status)
+        John Doe:confirmed
+        Jane Smith:pending
+        Alice Brown:confirmed
+        Confirmed Guests
+        John Doe
+        
+        Alice Brown they are two java 1.UserInterface.java and 2.RSVPHandler.java where in that "write the implement the business requirements"
