@@ -1,75 +1,10 @@
+
 Description
                     
                     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Animal Shelter is examining adoption records for animals that stayed in the shelter for a longer duration before being adopted. By focusing on animals that arrived before a specific past date, the team hopes to assess how long-term shelter residents are being adopted and by whom.
-To support this, a query is used to retrieve the Adopter's Full Name, Animal Name, Date of Arrival at the Shelter, and Adoption Date for animals that arrived at the shelter before October 20, 2023.
-This helps the shelter evaluate which adopters are more likely to adopt long-staying animals and plan outreach programs accordingly.The result should have the following columns: full_name animal_name shelter_arrival  adoption_date full_name - full name of the adopteranimal_name - name of the adopted animalshelter_arrival - the date the animal was brought into the shelteradoption_date - the date when the animal was adoptedSort the results by adopter's full name in ascending order and animal name in descending order.Rules: Include only animals that arrived at the shelter before October 20, 2023.Schema:so they are 4 table 1.Animals primary 2.adoptions 3.adopters 4.vaccinations Description
-                    
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Animal Shelter is examining adoption records for animals that stayed in the shelter for a longer duration before being adopted. By focusing on animals that arrived before a specific past date, the team hopes to assess how long-term shelter residents are being adopted and by whom.
-To support this, a query is used to retrieve the Adopter's Full Name, Animal Name, Date of Arrival at the Shelter, and Adoption Date for animals that arrived at the shelter before October 20, 2023.
-This helps the shelter evaluate which adopters are more likely to adopt long-staying animals and plan outreach programs accordingly.The result should have the following columns: full_name animal_name shelter_arrival  adoption_date full_name - full name of the adopteranimal_name - name of the adopted animalshelter_arrival - the date the animal was brought into the shelteradoption_date - the date when the animal was adoptedSort the results by adopter's full name in ascending order and animal name in descending order.Rules: Include only animals that arrived at the shelter before October 20, 2023.Schema:
+Once, a language model named Word Wand was tasked with manipulating sentences by a curious user. Word Wand was up for the challenge, altering the sentences based on their word count, reversing each word for odd word counts and reversing the entire sentence's word positions, resulting in a completely flipped sequence for even counts.  Create a software program to automate this manipulation task.Constraints: The sentence should contain only alphabets and spaces; otherwise, print "Invalid Sentence".Note:Do not edit the existing code template.In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user, and the rest of the text represents the output.Implement the business requirements within the main method. Please do not change the class name.Please do not use System.exit(0); to terminate the program.Sample Input / Output 1:Enter the sentenceThe Sun ShineWord Count: 3ehT nuS enihSSample Input / Output 2:Enter the sentenceBold ActionWord Count: 2Action BoldSample Input / Output 3:Enter the sentenceThe number 42 is often referred to as the answer to life, the universe, and everythingInvalid Sentence so java 
+UserInterface.java : import java.util.Scanner;
+public class UserInterface {
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+\\Fill code here }}
