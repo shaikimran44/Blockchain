@@ -1,5 +1,4 @@
-
-Description
+escription
                     
                     
 
@@ -15,58 +14,32 @@ Description
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Animal Adoption Center is conducting a review of its past adoption events to identify instances where animals were adopted without any monetary transaction. These cases are usually associated with special campaigns, waived-fee promotions, or urgent adoptions due to medical or emergency reasons.To support this analysis, a query is required to retrieve the Animal Name, Species, the Full Name of the Adopter, and the Adoption Date — but only for those records where no adoption charge was recorded. The results should be organized alphabetically by Animal Name to facilitate easy browsing.
-
-
-
-
-
-
-
-
-
-
-
-The result should have the following columns:
 
     
         
             
-                  animal_name 
-            
-            
-                 species  
-            
-            
-                 full_name 
-            
-             adoption_date 
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                
+                            
+                        
+                    
                 
             
         
@@ -84,6 +57,55 @@ The result should have the following columns:
 
 
 
-animal_name - name of the animal that was adoptedspecies - the species type of the animalfull_name - full name of the person who adopted the animaladoption_date - the date on which the adoption took placeSort the results by animal_name in ascending order.
-Rules: 
-Include only adoptions where no fee was applied during the adoption process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+A logistics company wants to monitor stock movements across its warehouses over a specified period to evaluate operational efficiency. They aim to track how many  products were moved and the total quantity of stock transferred per warehouse, ensuring that only warehouses handling more than one type of product are considered.To achieve this, they require a query that retrieves warehouse IDs, counts the number of  products moved, calculates the total quantity transferred, filters out warehouses that handled only one product, and sorts the results in descending order by warehouse ID.
+
+
+
+
+
+The result should have the following columns:  warehouse_idtotal_products_movedtotal_quantity_movedwarehouse_id- the unique identifier for each warehouse.
+
+
+
+
+
+    total_products_moved- the total number of products that have been moved from the warehousetotal_quantity_moved- the total quantity of products that have been moved from the warehouseSort the results in descending order based on the warehouse ID.
+
+
+
+    
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+Rules:  Filter records to include only warehouses where the movement date is from '2024-06-01' to '2024-12-31' and the total number of products moved is greater than 1.Schema: STOCK_MOVEMENTS table: Primary key movement_id INT, foreign key product_id INT, movement_type VARCHAR(10), quantity INT, movement_date DATE, foreign key warehouse_id INT
