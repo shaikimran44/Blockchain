@@ -128,5 +128,15 @@ Enter the number of repair request records to be added
     //The expected business logic is called in the main.
     //Make sure that same method signature is implemented.
     2.RequestSystem.java :
+    import java.util.HashMap;
+    import java.util.Map;
+    public class RequestSystem {
+    Map<String, String> requireMap = new HashMap<>();
+    public Map<String,string> getRepairMap(){
+    return repairMap;
+    }
+    public void setRepairMap(Map<String,String> repairMap){
+    this.repairMap = repairMap;
+    }
     //write and implement  the business requirements
-    
+    }
